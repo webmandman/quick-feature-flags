@@ -22,7 +22,7 @@
 			// Custom Storage Scopes
 			customScopes   : {},
 			// Package scan locations
-			scanLocations  : [],
+			scanLocations  : ["models"],
 			// Stop Recursions
 			stopRecursions : [],
 			// Parent Injector to assign to the configured injector, this must be an object reference
