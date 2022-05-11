@@ -1,62 +1,49 @@
 {
-    "$schema":"https://raw.githubusercontent.com/Ortus-Solutions/vscode-commandbox/master/resources/schemas/box.schema.json",
-    "name":"Quick Feature Flags (Rest)",
-    "version":"1.0.0",
-    "location":"",
-    "author":"You",
-    "slug":"quick-feature-flags-rest",
-    "createPackageDirectory":false,
-    "type":"mvc",
-    "homepage":"https://github.com/coldbox-templates/rest-hmvc",
-    "documentation":"https://github.com/coldbox-templates/rest-hmvc",
-    "repository":{
-        "type":"git",
-        "url":"https://github.com/coldbox-templates/rest-hmvc"
+    "$schema": "https://raw.githubusercontent.com/Ortus-Solutions/vscode-commandbox/master/resources/schemas/box.schema.json",
+    "name": "Quick Feature Flags (Rest)",
+    "version": "1.0.0",
+    "location": "",
+    "author": "You",
+    "slug": "quick-feature-flags-rest",
+    "createPackageDirectory": false,
+    "type": "mvc",
+    "homepage": "https://github.com/coldbox-templates/rest-hmvc",
+    "documentation": "https://github.com/coldbox-templates/rest-hmvc",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/coldbox-templates/rest-hmvc"
     },
-    "bugs":"https://github.com/coldbox-templates/rest-hmvc/issues",
-    "shortDescription":"A modular API RESTFul template",
-    "contributors":[],
-    "ignore":[],
-    "devDependencies":{
-        "testbox":"^4.0.0",
-        "relax":"^4.1.0",
-        "route-visualizer":"*",
-        "commandbox-dotenv":"*",
-        "commandbox-cfconfig":"*",
-        "commandbox-cfformat":"*",
-        "cfmigrations":"^3.0.6"
+    "bugs": "https://github.com/coldbox-templates/rest-hmvc/issues",
+    "shortDescription": "A modular API RESTFul template",
+    "contributors": [],
+    "ignore": [],
+    "devDependencies": {
+        "commandbox-cfconfig": "*",
+        "cfmigrations": "3.0.6"
     },
-    "installPaths":{
-        "relax":"modules/relax/",
-        "testbox":"testbox/",
-        "cbSwagger":"modules/cbSwagger/",
-        "route-visualizer":"modules/route-visualizer/",
-        "mementifier":"modules/mementifier/",
-        "cbvalidation":"modules/cbvalidation/",
-        "cfmigrations":"modules/cfmigrations/",
-        "qb":"modules/qb/",
-        "coldbox":"coldbox/",
-        "quick":"modules/quick/"
+    "installPaths": {
+        "cfmigrations": "modules/cfmigrations/",
+        "qb": "modules/qb/",
+        "coldbox": "coldbox/",
+        "quick": "modules/quick/"
     },
-    "dependencies":{
-        "mementifier":"^2.1.0+100",
-        "cbvalidation":"^2.1.0+126",
-        "qb":"^8.7.7",
-        "coldbox":"6.5.2+37",
-        "quick":"^4.2.4"
+    "dependencies": {
+        "qb": "^8.7.7",
+        "coldbox": "6.5.2+37",
+        "quick": "^4.2.4"
     },
-    "scripts":{},
-    "cfmigrations":{
-        "migrationsDirectory":"resources/database/migrations",
-        "schema":"${DB_SCHEMA}",
-        "connectionInfo":{
-            "bundleName":"${DB_BUNDLENAME}",
-            "bundleVersion":"${DB_BUNDLEVERSION}",
-            "password":"${DB_PASSWORD}",
-            "connectionString":"${DB_CONNECTIONSTRING}",
-            "class":"${DB_CLASS}",
-            "username":"${DB_USERNAME}"
+    "scripts": {},
+    "cfmigrations": {
+        "migrationsDirectory": "resources/database/migrations",
+        "schema": "${DB_SCHEMA}",
+        "connectionInfo": {
+            "bundleName": "${DB_BUNDLENAME}",
+            "bundleVersion": "${DB_BUNDLEVERSION}",
+            "password": "${DB_PASSWORD}",
+            "connectionString": "${DB_CONNECTIONSTRING}",
+            "class": "${DB_CLASS}",
+            "username": "${DB_USERNAME}"
         },
-        "defaultGrammar":"AutoDiscover@qb"
+        "defaultGrammar": "AutoDiscover@qb"
     }
 }
